@@ -1,0 +1,7 @@
+:root{--bg:#0f1312;--card:#171d1b;--fg:#e8eeec;--muted:#9aa8a3;--accent:#2fb68e;--line:#26302d}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8f7;--card:#fff;--fg:#14201c;--muted:#5b6b66;--line:#dfe6e3}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "IBM Plex Sans Thai","Noto Sans Thai",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.9rem;margin:0 0 4px}h2{font-size:1.2rem;margin:28px 0 6px}
+.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:20px}
+a{color:var(--accent)}ul{padding-left:1.2em}nav{display:flex;gap:16px;margin-bottom:28px}
