@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="th">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>TikTok – SANN MITI</title><link rel="stylesheet" href="style.css">
+<script>
+// TikTok sends the owner here after "Authorize". Pass the one-time code straight back to the SANN MITI program on this computer.
+(function () {
+  var q = location.search;
+  if (/[?&](code|error)=/.test(q)) location.replace("http://localhost:3000/auth/tiktok/callback" + q);
+})();
+</script></head>
+<body><main>
+<nav><a href="./">หน้าแรก / Home</a><a href="privacy.html">นโยบายความเป็นส่วนตัว / Privacy Policy</a><a href="terms.html">ข้อกำหนดการใช้งาน / Terms</a></nav>
+<h1>กำลังกลับไปที่โปรแกรม SANN MITI…</h1>
+<div class="card">
+<p>หน้านี้ส่งรหัสยืนยันจาก TikTok กลับไปที่โปรแกรม SANN MITI บนคอมพิวเตอร์เครื่องนี้ (http://localhost:3000)</p>
+<p>ถ้าไม่เด้งกลับเอง: เปิดโปรแกรม SANN MITI ให้ทำงานอยู่ แล้วคัดลอกลิงก์ทั้งหมดในแถบที่อยู่ของหน้านี้ ไปวางในช่อง "ลิงก์หลังกด Authorize" ในหน้าตั้งค่าของโปรแกรม</p>
+<p lang="en" class="muted">This page returns the TikTok authorisation code to the SANN MITI program running on this computer.</p>
+</div>
+</main></body></html>
